@@ -1,0 +1,14 @@
+<h2 class="text-center mb-4">All Expenses</h2>
+
+<div class="container">
+  @for (expense of expenseService.expenses(); track expense.id) {
+    <app-expense-item
+      [expense]="expense"
+      (remove)="deleteExpense($event)">
+    </app-expense-item>
+  }
+
+  @if (expenseService.expenses().length === 0) {
+    <p class="text-center text-muted">No expenses added yet.</p>
+  }
+</div>

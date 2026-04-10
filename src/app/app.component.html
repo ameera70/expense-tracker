@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand">Expense Tracker</span>
+
+  <div class="d-flex gap-2">
+    <a routerLink="/" class="btn btn-light btn-sm">Dashboard</a>
+    <a routerLink="/add" class="btn btn-light btn-sm">Add Expense</a>
+    <a routerLink="/expenses" class="btn btn-light btn-sm">View Expenses</a>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
